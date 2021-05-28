@@ -1,0 +1,282 @@
+
+
+/* Header */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #f3e9f1;
+}
+.logo{
+    width: 15%;
+    margin-left: 10px;
+}
+.lien_panier{
+    text-decoration: none;
+    color: black;
+    margin-right: 25px;
+}
+.box_panier{
+    display: flex;
+}
+.icone_panier{
+    margin-left: 10px;
+}
+.lien_logo{
+    width: 100%
+}
+#nombre_panier{
+    margin-left: 5px;
+}
+
+/* Section index.html */
+
+.box_titre_ours{
+    text-align: center;
+    margin-top: 20px;
+}
+.image_ours{
+    width: 20%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.box_produit{
+    width: 80%;
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: black solid 2px;
+    box-shadow: 3px 3px black;
+    border-radius: 10px;
+    background-color: #f3e9f1;
+}
+.nom_ours{
+    margin: 0;
+}
+.box_info{
+    margin-left: 10px;
+}
+.couleurs_ours{
+    margin: 0;
+    font-size: 1.5em;
+    text-overflow : ellipsis;
+    overflow: hidden;
+}
+.box_prix{
+    display: flex;
+}
+.prix_ours{
+    margin: 0;
+    font-size: 1.5em;
+}
+.lien_produit{
+    text-decoration: none;
+    color: black;
+}
+.image_ours_carte{
+    width: 100%;
+}
+.box_carte{
+    width: 80%;
+}
+
+/* Footer */
+
+
+.box_footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+.icone_social{
+    font-size: 2em;
+    color: black;
+}
+.box_lien_social{
+    margin-left: 20px;
+}
+
+/* STICKY FOOTER */
+html 
+{
+    position: relative;
+    min-height: 100%;
+}
+
+body 
+{
+    margin: 0 0 100px; 
+}
+
+footer 
+{
+    background-color: #f3e9f1;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    overflow: hidden;
+}
+/* END STICKY FOOTER */
+
+/* Section produit.html */
+
+.box_page_produit{
+    margin-top: 25px;
+}
+#produit{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.bouton_panier{
+    width: 100%;
+}
+.box_couleurs{
+    display: flex;
+}
+.lien_bouton_panier{
+    width: 50%;
+}
+
+/* Section panier.html */
+
+.titre_panier{
+    text-align: center;
+    margin-top: 50px;
+}
+.box_produit_panier{
+    max-width: 850px;
+}
+.box_titre_panier{
+    max-width: 850px;
+    border-bottom: 4px solid lightgrey;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 50px;
+}
+.box_general_panier{
+    display: flex;
+    margin-top: 10px;
+}
+.titre_produit{
+    width: 45%;
+}
+.titre_prix{
+    width: 15%;
+}
+.titre_qty{
+    width: 30%;
+}
+.titre_total{
+    width: 10%;
+}
+.box_ajout_produit{
+    width: 45%;
+    display: flex;
+    justify-content: space-around;
+}
+.nom_ajout_produit{
+    width: 25%;
+}
+.img_ajout_produit{
+    width: 45%;
+}
+.box_ajout_prix{
+    width: 15%;
+    text-align: center;
+}
+.box_ajout_qty{
+    width: 30%;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+.panier_vide{
+    margin-top: 25px;
+}
+.fa-minus:hover, .fa-plus:hover, .fa-times-circle{
+    cursor:pointer;
+}
+.fa-times-circle{
+    color: red;
+}
+.box_ajout_prix_total{
+    margin-top: 15px;
+}
+.prix_total{
+    margin-top: 15px;
+}
+.bouton_commande{
+    width: 30%;
+    margin-top: 20px;
+}
+.box_formulaire{
+    max-width: 850px;
+}
+.input_form{
+    max-width: 350px;
+}
+.erreur_form{
+    color: red;
+}
+
+/* Section confirmation.html */
+
+.box_confirmation{
+    text-align: center;
+}
+
+/* Classe de positionnement */
+
+.centrer_horizontalement{
+    margin-left: auto;
+    margin-right: auto;
+}
+.centrer_verticalement{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+/* tailles de police */
+
+.taille_paragraphe{
+    font-size: 1.3em;
+}
+.test{
+    font-size: 2em;
+}
+
+@media screen and (max-width: 426px){
+    
+    /*header*/
+
+.logo{
+    width: 40%;
+}
+.para_panier{
+    display: none;
+}
+
+/* panier.html */
+
+.titre_qty{
+    width: 20%;
+}
+.box_ajout_qty{
+    width: 20%;
+}
+.titre_total{
+    margin-left: auto;
+    margin-right: auto;
+}
+.box_prix_total_item{
+    margin-left: auto;
+    margin-right: auto;
+}
+.bouton_commande{
+    width: 70%;
+}
+
+}

@@ -1,0 +1,19 @@
+{
+  "name": "projet5",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1cd"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nicoows/Projet5.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nicoows/Projet5/issues"
+  },
+  "homepage": "https://github.com/Nicoows/Projet5#readme"
+}

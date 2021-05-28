@@ -3,14 +3,54 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-
+        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="https://kit.fontawesome.com/fe61d93dd9.js" crossorigin="anonymous"></script>
 
-        <title>Projet5</title>
+        <title>Orinoco</title>
     </head>
     <body>
-        <h1>
-            Bonjour
-        </h1>
+        <header>
+            <a href="index.html" class="lien_logo">
+                <img src="JWDP5-master/images/logo_orinoco.png" alt="Logo Orinoco" class="logo">
+            </a>
+            <a href="panier.html" class="lien_panier centrer_verticalement">
+                <div class="box_panier centrer_verticalement">
+                    <p class="taille_paragraphe centrer_verticalement para_panier">Panier</p>
+                    <i class="fas fa-shopping-cart icone_panier centrer_verticalement"></i><span id="nombre_panier" class="centrer_verticalement">0</span>
+                </div>
+            </a>
+        </header>
+        <div class="centrer_horizontalement box_titre_ours">
+            <h1 class="titre_ours">Ours en peluche</h1>
+        </div>
+        <section id="liste_produit">
+
+        </section>
+        <footer>
+            <div class="box_footer">
+                    <div class="box_lien_social">
+                        <a class="lien-social" href="https://twitter.com/?logout=1617699918699" title="Twitter"><span class="fa fa-twitter icone_social"></span></a>
+                    </div>
+                    <div class="box_lien_social">
+                        <a class="lien-social" href="https://fr-fr.facebook.com/" title="Facebook"><span class="fa fa-facebook icone_social"></span></a>
+                    </div>
+                    <div class="box_lien_social">
+                        <a class="lien-social" href="https://dribbble.com/" title="Dribbble"><span class="fa fa-dribbble icone_social"></span></a>
+                    </div>
+                    <div class="box_lien_social">
+                        <a class="lien-social" href="https://www.instagram.com/?hl=fr" title="Instagram"><span class="fa fa-instagram icone_social"></span></a>
+                    </div>
+            </div>
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+        <script src="classes/Ajax.js"></script>
+        <script src="classes/CardProduit.js"></script>
+        <script src="app.js"></script>
+
     </body>
 </html>
