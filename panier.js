@@ -176,14 +176,24 @@ class Panier{
         recupPrixTotal = JSON.parse(recupPrixTotal);
 
     let boxAjoutPrixTotal = document.createElement("div");
-        boxAjoutPrixTotal.className = "box_ajout_prix_total centrer_verticalement";
+        boxAjoutPrixTotal.className = "box_ajout_prix_total";
 
     let ajoutPrixTotal = document.createElement("h5");
         ajoutPrixTotal.innerHTML ="Prix total :" + recupPrixTotal + "€";
         ajoutPrixTotal.className = "prix_total";
 
+    let boxSuppPanier = document.createElement("div");
+        boxSuppPanier.className = "box_supp_panier centrer_verticalement";
+        boxSuppPanier.id = "bouton_supp_all";
+
+    let supPanier = document.createElement("p");
+        supPanier.innerHTML = "Supprimer le panier";
+        supPanier.className = "supp_panier";
+
     boxProduit.appendChild(boxAjoutPrixTotal);
+    boxAjoutPrixTotal.appendChild(boxSuppPanier);
     boxAjoutPrixTotal.appendChild(ajoutPrixTotal);
+    boxSuppPanier.appendChild(supPanier);
     }
 
     panierVide(){

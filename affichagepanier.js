@@ -9,6 +9,7 @@ serveur.appelServeur("http://localhost:3000/api/teddies").then(data => {
     qtyPanier.qtyMoins(data);
     qtyPanier.qtyPlus(data);
     qtyPanier.suppProduit(data);
+    qtyPanier.suppPanier();
     affiPanier.panierVide();
 })
 function onLoadPanierProduit (){

@@ -1,6 +1,7 @@
 document.forms["formulaire"].addEventListener("submit", function(e) {
     var erreur;
     var inputs = this;
+    console.log(inputs);
     e.preventDefault();
     for ( var i =0; i < inputs.length; i++) {
         
@@ -41,21 +42,35 @@ document.forms["formulaire"].addEventListener("submit", function(e) {
         product_id.push(idProduit[i].id);
     
         }
-        
-        console.log(typeof(product_id));
 
         var commande = {
             contact: contact,
             products: product_id
         }
-        console.log(commande);
 
     sendServeur.envoiServeur("http://localhost:3000/api/teddies/order", JSON.stringify(commande)).then(data => {
         console.log(data);
+        
+        localStorage.setItem("orderId", JSON.stringify(data.orderId));
     });
+
 })
 
 var form = document.querySelector("#form");
+
+var boutonRedirect = document.getElementById("bouton");
+
+boutonRedirect.addEventListener("click", function() {
+
+    for ( var i =0; i < form.length; i++)
+        if(form[0].value && form[1].value && form[2].value && form[3].value){
+            console.log(form[i].value);
+            function redirect(){
+                document.location.href="confirmation.html";
+            }
+            redirect();
+            }
+})
 
 const validEmail = function(inputEmail) {
 
@@ -173,9 +188,3 @@ form.ville.addEventListener('change', function() {
 })
 
 const sendServeur = new Send;
-
-form.addEventListener('change', function() {
-
-    
-        
-})

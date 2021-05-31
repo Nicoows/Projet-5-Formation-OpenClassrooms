@@ -146,4 +146,12 @@ class Quantite {
             })
         }
     }
+    suppPanier() {
+        var btnSuppAll = document.getElementById("bouton_supp_all");
+
+        btnSuppAll.addEventListener('click', function() {
+            localStorage.clear();
+            document.location.reload();
+        })
+    }
 }
