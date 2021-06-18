@@ -80,8 +80,8 @@ class Quantite {
                 data[i]._id = idProduit;
                 
                 for( let i = 0; i < tabProduit.length; i++){
-                    if(tabProduit[i].id == data[i]._id){
-
+                    if(tabProduit[i].id == idProduit){
+                        
                         tabProduit[i].qty += 1;    
                         
                         for( let i = 0; i < data.length; i++){
