@@ -292,4 +292,10 @@ footer
     width: 70%;
 }
 
+/* produit.html */
+
+.box_couleurs{
+    flex-direction: column;
+}
+
 }
