@@ -2,6 +2,7 @@ const listeProduit = document.getElementById("liste_produit");
 const serveur = new Ajax;
 const carteProduit = new CardProduit;
 
+
 serveur.appelServeur("http://localhost:3000/api/teddies").then(data => {
     
     for(var index = 0; index < data.length; index++) {
@@ -18,7 +19,10 @@ serveur.appelServeur("http://localhost:3000/api/teddies").then(data => {
     
         }
 
+     }).catch(error => {
+         alert('Une erreur est survenue, veuillez réessayer plus tard');
      });
+     
     
      function onLoadPanierProduit (){
         var nombreProduit = localStorage.getItem("nombrePanier");
